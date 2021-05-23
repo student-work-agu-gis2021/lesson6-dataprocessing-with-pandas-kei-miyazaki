@@ -17,7 +17,13 @@ import numpy as np
 data = None
 
 # YOUR CODE HERE 1
+data = pd.read_csv("data/1091402.txt",delim_whitespace=True,skiprows=[1],na_values=[-9999])
 
+#check that the dataframe looks ok:
+data.head()
+
+#Check the last rows of the data (there should be some NaN values)
+data.tail()
 # ### Part 2 
 # 
 # In this section, you will calculate simple statistics based on the input data:
